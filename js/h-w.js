@@ -1,25 +1,57 @@
 
-
-function first() {
-    setTimeout(function(){
-        console.log(1)
-    }, 1000)
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red',
+    },
+    makeTest: function() {
+        console.log('Test')
+    }
 }
+options.makeTest()
 
-function second() {
-    console.log(2)
-}
+const {border, bg} = options.colors
+console.log(border)
 
-first()
-second()
+// console.log(Object.keys(options).length)
 
-function learnJS(lang, callback) {
-    console.log(`Я учу: ${lang}`)
-    callback()
-}
 
-function done() {
-    console.log('Я прошел этот курс!')
-}
+// const newObj = {
+//     name: 'Ruslan',
+//     age: 42,
+//     family: {
+//         son: 'Eldar',
+//         doter: 'Esmira',
+//         wife: 'Lilia',
+//     },
+//     national: 'Tatar',
+//     country: 'Russia'
+// }
+// console.log(Object.keys(newObj).length)
 
-learnJS('JavaScript', done)
+
+
+
+
+// console.log(options['colors']['border']);
+
+// delete options.name;
+
+// console.log(options)
+// let counter = 0;
+// for (let key in options) {
+//     if (typeof options[key] === 'object'){
+//         for (let i in options[key]){
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`)
+            
+//         }
+//     }else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`)
+//         counter++
+//     }
+// }
+// console.log(counter)
+
