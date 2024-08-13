@@ -38,3 +38,13 @@
 // }
 // console.log(msg);
 
+// let x = 5;
+// alert(x++)
+// console.log(!!( a && b ) === (a && b){})
+// let y = 1; let x = y = 2; alert(x)
+// alert( "1"[0] )
+// console.log(typeof +"Infinity" ); 
+// let a = [1, 2, 3];
+// let b = [1, 2, 3]
+
+// console.log(a == b)
